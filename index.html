@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornelia Manda | Portfolio | Resume</title>
+     <!-- Made by: Cornelia Manda, December 10th, 2025 for GBDA228
+    I had to make this page because when I was trying to link my resume.pdf, it was just not working it would say error 505 gateway, very upsetting i spent way too long trying to fix it that I decided to just make an extra page as i already have my fundamentals down, especially the experience with our class exercises and inputting the information then after i made this page, i forgot to link this page and it had the pdf linked still, it decided to work wow, so now i just have an open pdf button at the bottom because i cant put my hardwork on this page to waste.
+--> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* everything style & global rset! */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #E0E2DF;
+        }
+
+        h1, h2, h3, a, th {
+            font-family: "Playfair Display", serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #E0E2DF;
+            min-height: 100vh;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            background-color: #DDBDBE;
+            padding: 17px 60px;
+        }
+
+      /* again just my cornelia manda name, this title is misleading, but nothing else made sense*/
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            color: #655C5B;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #655C5B;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+      
+
+        .page-title {
+            text-align: center;
+            color: #816B6E;
+            font-size: 4.5em;
+            margin: 2px 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .contact-info {
+            text-align: center;
+            color: #655C5B;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        main {
+            padding: 40px 80px;
+            background-color: white;
+            margin: 30px 80px;
+            border-radius: 5px;
+        }
+
+        .resume-section {
+            margin-bottom: 40px;
+        }
+
+        .resume-section h2 {
+            color: #816B6E;
+            font-size: 1.8em;
+            border-bottom: 2px solid #C99B9B;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .resume-item {
+            margin-bottom: 25px;
+        }
+
+        .resume-item h3 {
+            color: #655C5B;
+            font-size: 1.3em;
+            margin: 0 0 5px 0;
+            font-weight: 600;
+        }
+
+        .resume-item p {
+            margin: 5px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .job-title {
+            color: #816B6E;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .dates {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        .company-location {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        .skills-list {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .bullet-list {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            margin-bottom: 10px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1em;
+            background-color: #C99B9B;
+            color: white;
+            text-decoration: none;
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+            transition: all 0.4s ease;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #816B6E;
+            transform: rotate(-2deg);
+        }
+
+        .pdf-button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1em;
+            background-color: #C99B9B;
+            color: white;
+            text-decoration: none;
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+
+        .pdf-button:hover {
+            background-color: #816B6E;
+            transform: rotate(-2deg);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 40px;
+            color: #655C5B;
+            font-size: 0.9em;
+            border-top: 1px solid #DDBDBE;
+        }
+
+        .footer-table-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-table {
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .footer-table th {
+            color: #816B6E;
+            font-size: 1.1em;
+            padding: 5px 10px 5px 0;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .footer-table th:not(:first-child) {
+            padding-left: 30px;
+        }
+
+        .footer-table td {
+            padding: 5px 0;
+            font-family: "Roboto", sans-serif;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .footer-table a {
+            color: #655C5B;
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .footer-table a:hover {
+            color: #816B6E;
+            border-bottom: 1px solid #816B6E;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            opacity: 0.8;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="logo">Cornelia Manda</div>
+            <nav>
+                <ul>
+                   <li><a href="https://cornelia-manda.github.io/cornelia.manda/">Home</a></li>
+                    <li><a href="https://cornelia-manda.github.io/portfolio/">Portfolio</a></li>
+                    <li><a href="https://cornelia-manda.github.io/contact-aboutme/">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <a href="https://cornelia-manda.github.io/a3-manda_cornelia-portfolio/" class="back-button">← Back to Portfolio</a>
+
+        <h1 class="page-title">RESUME</h1>
+
+        <div class="contact-info">
+            <p>(226) 753-4686 • mandacorneliia@gmail.com</p>
+        </div>
+
+        <main>
+            <div class="resume-section">
+                <h2>SKILLS</h2>
+                <ul class="bullet-list">
+                    <li><strong>Technical:</strong> Microsoft Office Suite (Outlook, Word, Excel, PowerPoint), Adobe Cloud</li>
+                    <li><strong>Professional:</strong> On-Location Photography, Creative Direction, Visual Storytelling, Client-Facing Experience, Customer Service, Project Management, Organizational Skills</li>
+                    <li><strong>Personal:</strong> Quick Adaptability, Attention to Detail, Time Management, Interpersonal Communication, Ability to work independently and in team environments, Goal Setting & Achievement, Work well under pressure, Confidentiality</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>EDUCATION</h2>
+                <div class="resume-item">
+                    <h3>University of Waterloo</h3>
+                    <p class="company-location">Waterloo, ON</p>
+                    <p class="dates">September 2024 - Present</p>
+                    <p class="job-title">Global Business and Digital Arts Degree</p>
+                    <p>• Awarded the University of Waterloo's President's Scholarship for achieving a 90 - 94.9% admission average. <br>• Director, screenwriter, editor, and actress for two award-winning short films.</p>
+                </div>
+
+                <div class="resume-item">
+                    <h3>St Mary's High School</h3>
+                    <p class="company-location">Kitchener, ON</p>
+                    <p class="dates">September 2020 - June 2024</p>
+                    <p>Ontario Secondary School Diploma (OSSD). <br> • Academic Top 5% & 10%, Honour Roll (2020 - 2024). <br>• Co-President & WCDSB Senate Member (2023 - 2024).</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>EMPLOYMENT EXPERIENCE</h2>
+                <div class="resume-item">
+                    <h3>Professional Photographer</h3>
+                    <p class="company-location">Photos Unlimited, Kitchener, ON</p>
+                    <p class="dates">July 2025 - Present</p>
+                    <ul class="bullet-list">
+                        <li>Provide professional portrait photography services for clients in both studio and on-location settings</li>
+                        <li>Independently manage all aspects of studio operations, including client scheduling, setup, and day-to-day operations</li>
+                        <li>Set up and operate photography equipment, ensuring optimal lighting, composition, and technical quality</li>
+                        <li>Engage with clients to create a comfortable atmosphere and capture authentic, high-quality images</li>
+                        <li>Coordinate with team members to manage bookings and maintain efficient workflow</li>
+                        <li>Deliver exceptional customer service while maintaining brand standards</li>
+                    </ul>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Human Resources Assistant</h3>
+                    <p class="company-location">YNCU, Kitchener, ON</p>
+                    <p class="dates">August 2023 - September 2023</p>
+                    <ul class="bullet-list">
+                        <li>Scanned and digitized documents for an efficient and organized document management system</li>
+                        <li>Collaborated with the marketing team on events including Longo's + Guelph Hope House Food Drive and Mitchell Community BBQ</li>
+                        <li>Represented YNCU during events, fostering a positive image and promoting company values</li>
+                        <li>Successfully networked with professionals during meetings to establish valuable contacts for future collaborations</li>
+                        <li>Maintained confidentiality and ensured data security</li>
+                        <li>Conducted reference checks for employee candidates</li>
+                        <li>Utilized various Microsoft Office software including Outlook and Word</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>VOLUNTEER EXPERIENCE</h2>
+                <div class="resume-item">
+                    <h3>Co-President, Student Council</h3>
+                    <p class="company-location">St. Mary's High School, Kitchener, ON</p>
+                    <p class="dates">September 2023 - June 2024</p>
+                    <ul class="bullet-list">
+                        <li>Led and oversaw the activities of St. Mary's' Student Council as Co-President</li>
+                        <li>Planned, organized, and executed various school events and initiatives in collaboration with Student Council members</li>
+                        <li>Served as the writer, sole editor and on-air host for Eagles News Network and created a Day in a Life video for the WCDSB Senate socials</li>
+                        <li>Collaborated as a member of the school board-wide senate to plan and coordinate board-wide events and initiatives</li>
+                        <li>Delegated tasks and responsibilities effectively to ensure successful event execution</li>
+                        <li>Represented the student body in meetings with school administration and Catholic School Advisory Council meetings</li>
+                    </ul>
+                </div>
+            </div>
+<div class="resume-section">
+                <h2>CERTIFICATES &amp TRAINING</h2>
+                <div class="resume-item">
+                    <p>• Standard First Aid and CPR-C <br>• WHMIS & PPE Training <br>• Health and Safety Training <br> • Conflict Resolution (Workplace Violence and Harassment) <br>• Customer Service Training</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>INTERESTS &amp ACTIVITIES</h2>
+                <div class="resume-item">
+                    <p>• Photography <br>• Hiking</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="pdf-button-container">
+            <a href="resume.pdf" class="pdf-button" target="_blank">Open PDF</a>
+        </div>
+
+        <footer>
+            <div class="footer-table-wrapper">
+                <table class="footer-table">
+                    <tr>
+                        <th>Email:</th>
+                        <td><a href="mailto:cmanda@uwaterloo.ca">cmanda@uwaterloo.ca</a></td>
+                         
+                        <th>School:</th>
+                        <td><a href="https://uwaterloo.ca/stratford-school-of-interaction-design-and-business/global-business-and-digital-arts" target="_blank">University of Waterloo</a></td>
+                         
+                        <th>Location:</th>
+                        <td>Kitchener-Waterloo, Ontario</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p class="copyright">&copy; 2026 Cornelia Manda. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
